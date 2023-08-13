@@ -1,1 +1,96 @@
-/* Colocar estilo avulso */
+nav.mobile {
+    display: none;
+}
+
+section.main {
+    background-image: url(../assets/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px 0;
+    min-height: 800px;
+}
+
+section.main header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.icons-social {
+    float: right;
+}
+
+.icons-social a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.logo {
+    float: left;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+nav.desktop {
+    float: right;
+    margin-top: 35px;
+}
+
+nav.desktop ul {
+    list-style-type: none;
+}
+
+nav.desktop ul li {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: lighter;
+    margin: 0 15px;
+}
+
+.content-header {
+    margin: 80px 0;
+}
+
+.content-header h2, .content-header b {
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.content-header p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+section.plans h2 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+section.plans .plans-calls {
+    padding: 20px 2%;
+}
+
+section.box-plans {
+    padding: 40px 0;
+}
+
+section.box-plans > .center {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+section.box-plans .box-single {
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+section.box-plans .box-single h2 {
+    font-weight: lighter;
+    padding: 3px;
+}
+
+section.box-plans .box-single p {
+    padding: 3px 10px;
+}
