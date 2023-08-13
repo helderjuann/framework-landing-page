@@ -2,10 +2,35 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+.clear {
+	clear: both;
 }
 
 .text-white {
 	color: white;
+}
+
+.text-black {
+	color: black;
+}
+
+.text-gold {
+	color: gold;
+}
+
+.text-light-blue {
+	color: #00A3D9;
+}
+
+.text-light-gray {
+	color: #777777;
 }
 
 .gold {
@@ -16,39 +41,64 @@
 	background-color: #00A3D9;
 }
 
-section.container {
+.gray {
+	background-color: #b4b4b4;
+}
+
+.light-gray {
+	background-color: #d4d4d4;
+}
+
+.mw700 {
+	max-width: 700px;
+}
+
+.mw960 {
+	max-width: 960px;
+}
+
+.mw1280 {
+	max-width: 1280px;
+}
+
+.container {
 	width: 100%;
 }
 
-div.flex {
+.flex {
 	display: flex;
-	max-width: 960px;
 	padding: 0 2%;
 	margin: 0 auto;
 	flex-wrap: wrap;
 }
 
-div.w50 {
+.w50 {
 	width: 50%;
 }
 
-div.w33 {
+.w33 {
 	width: 33.3%;
 }
 
-div.w100 {
+.w100 {
 	width: 100%;
 }
 
-.left {
+
+.center {
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.text-left {
 	text-align: left;
 }
 
-.right {
+.text-right {
 	text-align: right;
 }
 
-.center {
+.text-center {
 	text-align: center;
 }
 
@@ -64,15 +114,14 @@ div.w100 {
 	order: 3;
 }
 
-@media screen and (max-width: 768px) {
-
-
-	div.w50,div.w33 {
-		width: 100%;
-	}
-
-	.left,.right,.center {
-		margin-bottom: 30px;
-		text-align: center;
-	}
+.s-button {
+	display: block;
+    width: 177px;
+    height: 44px;
+    text-decoration: none;
+    margin-top: 20px;
+    line-height: 44px;
+    border-radius: 20px;
+	text-align: center;
+	color: white;
 }
