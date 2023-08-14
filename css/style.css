@@ -73,7 +73,7 @@ section.plans .plans-calls {
 }
 
 section.box-plans {
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 section.box-plans > .center {
@@ -83,14 +83,98 @@ section.box-plans > .center {
 
 section.box-plans .box-single {
     width: 33.3%;
-    padding: 0 10px;
+    padding: 0 40px;
 }
 
 section.box-plans .box-single h2 {
     font-weight: lighter;
     padding: 3px;
+    margin-bottom: 10px;
 }
 
 section.box-plans .box-single p {
-    padding: 3px 10px;
+    padding: 3px 20px;
+}
+
+section.box-plans .box-single i {
+    margin: 0 10px;
+}
+
+section.box-plans .price {
+    margin-top: 10px;
+    padding: 15px 0;
+}
+
+section.box-plans .price h2 {
+    font-size: 24px;
+    padding: 0 20px;
+    display: inline-block;
+    border-top: 1px solid #ccc;
+}
+
+section.box-plans .box-wrapper {
+    border: 1px solid #ccc;
+    width: 100%;
+    min-height: 300px;
+    box-shadow: 20px 20px 10px 0px rgba(0,0,0,0.1);
+}
+
+section.parallax {
+    width: 100%;
+    min-width: 300px;
+    background-image: url(../assets/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section.parallax > .center {
+    max-width: 960px;
+    padding: 40px 2%;
+}
+
+section.parallax p {
+    margin-top: 15px;
+}
+
+section.parallax h2, section.parallax b {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1152px) {
+
+    section.box-plans > .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section.box-plans .box-single {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 512px) {
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        float: none;
+        margin: 0 auto;
+    }
+    
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        display: block;
+    }
 }
