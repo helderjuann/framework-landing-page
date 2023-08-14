@@ -116,12 +116,12 @@ html, body {
 
 .s-button {
 	display: block;
-    width: 177px;
-    height: 44px;
-    text-decoration: none;
-    margin-top: 20px;
-    line-height: 44px;
-    border-radius: 20px;
+    	width: 177px;
+    	height: 44px;
+    	text-decoration: none;
+    	margin-top: 20px;
+    	line-height: 44px;
+    	border-radius: 20px;
 	text-align: center;
 	color: white;
 }
