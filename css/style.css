@@ -49,8 +49,23 @@ nav.desktop ul li {
     margin: 0 15px;
 }
 
+nav ul li a {
+    text-decoration: none;
+}
+
 .content-header {
     margin: 80px 0;
+}
+
+.content-header a {
+    transition: 750ms;
+    border: 1px solid #00A3D9;
+}
+
+.content-header a:hover {
+    background-color: white;
+    color: #00A3D9;
+    border: 1px solid #00A3D9;
 }
 
 .content-header h2, .content-header b {
@@ -141,6 +156,117 @@ section.parallax p {
 section.parallax h2, section.parallax b {
     font-weight: 400;
     font-size: 25px;
+    line-height: 50px;
+}
+
+section.input-team {
+    margin-top: 40px;
+}
+
+section.input-team h2,
+section.input-team b {
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+}
+
+section.input-team .contact input:not([type=submit]) {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+section.input-team .contact textarea {
+    resize: vertical;
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    height: 150px;
+}
+
+section.input-team .contact input[type=submit] {
+    border: 0;
+    cursor: pointer;
+    border: 1px solid #00A3D9;
+    transition: 750ms;
+}
+
+section.input-team .contact input[type=submit]:hover {
+    background-color: white;
+    color: #00A3D9;
+    border: 1px solid #00A3D9;
+}
+
+section.input-team input:focus, section.input-team textarea:focus {
+    outline: 0;
+}
+
+section.input-team .w50 {
+    float: left;
+    padding: 0px 15px 40px 15px;
+}
+
+section.input-team .line-ef {
+    width: 15%;
+    max-width: 360px;
+    height: 2px;
+    position: absolute;
+    transition: 750ms;
+}
+
+section.input-team h2:hover > .line-ef {
+    width: 100%;
+}
+
+section.input-team .team .box {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 10px 8px;
+}
+
+section.input-team .team .topbox {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+section.input-team .team .author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section.input-team .team .one {
+    background-image: url(https://wallpapers-clan.com/wp-content/uploads/2022/09/one-piece-pfp-4.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section.input-team .team .two {
+    background-image: url(https://i.pinimg.com/736x/74/a7/44/74a7445006058cf765a198f3bc463353.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section.input-team .team .author-info {
+    display: inline-block;
+    padding-left: 8px;
+    vertical-align: middle;
+}
+
+section.input-team .team .author-desc p {
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+section.input-team .box {
+    width: 46%;
+    margin: 0 2%;
 }
 
 @media screen and (max-width: 1152px) {
@@ -156,6 +282,25 @@ section.parallax h2, section.parallax b {
         width: 100%;
         margin-bottom: 40px;
     }
+
+    section.input-team .contact input[type=submit] {
+        margin: 10px auto;
+        width: 100px;
+    }
+
+    section.input-team .w50 {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    section.input-team .box {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section.input-team .team h2 {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 512px) {
@@ -169,6 +314,10 @@ section.parallax h2, section.parallax b {
         float: none;
         margin: 0 auto;
     }
+
+    .icons-social {
+        display: none;
+    }
     
     nav.desktop {
         display: none;
@@ -176,5 +325,45 @@ section.parallax h2, section.parallax b {
 
     nav.mobile {
         display: block;
+    }
+
+    .content-header h2, .content-header b {
+        font-size: 15px;
+    }
+
+    .content-header p {
+        font-size: 13px;
+    }
+
+    .content-header a {
+        font-size: 13px;
+        width: 125px;
+        line-height: 40px;
+    }
+
+    section.plans h2 {
+        font-size: 18px;
+    }
+
+    section.box-plans .price h2 {
+        font-size: 21px;
+        padding-top: 10px;
+    }
+    
+    section.parallax h2, section.parallax b {
+        font-size: 15px;
+    }
+
+    section.parallax p {
+        font-size: 13px;
+    }
+    
+    section.input-team h2,
+    section.input-team b {
+        font-size: 18px;
+    }
+
+    section.input-team .team .author-info p {
+        font-size: 13px;
     }
 }
