@@ -49,6 +49,10 @@ html, body {
 	background-color: #d4d4d4;
 }
 
+.black {
+	background-color: #000000aa;
+}
+
 .mw700 {
 	max-width: 700px;
 }
@@ -59,6 +63,10 @@ html, body {
 
 .mw1280 {
 	max-width: 1280px;
+}
+
+.mw1360 {
+	max-width: 1360px;
 }
 
 .container {
