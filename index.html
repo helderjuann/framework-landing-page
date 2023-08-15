@@ -19,7 +19,7 @@
     <link rel="icon" href="#">
 </head>
 <body>
-    <section class="main">
+    <section class="main" id="home">
         <div class="center mw1280">
             <header>
                 <div class="icons-social">
@@ -32,16 +32,18 @@
                 </div><!-- logo -->
                 <nav class="desktop">
                     <ul>
-                        <li><a class="text-white" href="#">Home</a></li>
-                        <li><a class="text-white" href="#">Sobre</a></li>
-                        <li><a class="text-white" href="#">Contato</a></li>
+                        <li><a class="text-white" href="#home">Home</a></li>
+                        <li><a class="text-white" href="#about">Sobre</a></li>
+                        <li><a class="text-white" href="#contact">Contato</a></li>
                     </ul>
                 </nav><!-- desktop -->
                 <nav class="mobile">
-                    <ul>
-                        <li><a class="text-white" href="#">Home</a></li>
-                        <li><a class="text-white" href="#">Sobre</a></li>
-                        <li><a class="text-white" href="#">Contato</a></li>
+                    <i class="fa fa-bars text-white"></i>
+                    <ul class="text-center">
+                        <ul>
+                        <li><a class="text-white" href="#home">Home</a></li>
+                        <li><a class="text-white" href="#about">Sobre</a></li>
+                        <li><a class="text-white" href="#contact">Contato</a></li>
                     </ul>
                 </nav><!-- desktop -->
                 <div class="clear"></div><!-- clear -->
@@ -66,7 +68,7 @@
             </div><!-- content-header -->
         </div><!-- center -->
     </section><!-- main -->
-    <section class="plans">
+    <section class="plans" id="about">
         <div class="plans-calls container light-gray">
             <div class="center mw1280">
                 <h2 class="text-center text-light-blue">Confira nossos planos!</h2>
@@ -186,6 +188,9 @@
             <div class="clear"></div><!-- clear -->
         </div><!-- center -->
     </section>
+    <footer class="text-white text-center light-blue" id="contact">
+        <p>Todos os direitos reservados</p>
+    </footer>
 </body>
 <script src="./script/jquery.js"></script>
 <script src="./script/functions.js"></script>
