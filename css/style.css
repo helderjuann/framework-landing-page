@@ -1,7 +1,3 @@
-nav.mobile {
-    display: none;
-}
-
 section.main {
     background-image: url(../assets/bg.jpg);
     background-position: center;
@@ -47,10 +43,39 @@ nav.desktop ul li {
     font-size: 17px;
     font-weight: lighter;
     margin: 0 15px;
+    transition: 0.4s;
 }
 
 nav ul li a {
     text-decoration: none;
+}
+
+nav.mobile {
+    display: none;
+    float: right;
+}
+
+nav.mobile ul {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    background-color: rgba(200, 200, 200, 0.4);
+}
+
+nav.mobile ul li a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+nav.mobile > i {
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    top: 16px;
 }
 
 .content-header {
@@ -267,6 +292,11 @@ section.input-team .team .author-desc p {
 section.input-team .box {
     width: 46%;
     margin: 0 2%;
+}
+
+footer {
+    width: 100%;
+    padding: 10px 2%;
 }
 
 @media screen and (max-width: 1152px) {
