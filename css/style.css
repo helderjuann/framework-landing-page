@@ -80,6 +80,7 @@ nav.mobile > i {
 
 .content-header {
     margin: 80px 0;
+    padding: 0 4%;
 }
 
 .content-header a {
@@ -109,7 +110,7 @@ section.plans h2 {
 }
 
 section.plans .plans-calls {
-    padding: 20px 2%;
+    padding: 20px 4%;
 }
 
 section.box-plans {
@@ -161,7 +162,6 @@ section.box-plans .box-wrapper {
 
 section.parallax {
     width: 100%;
-    min-width: 300px;
     background-image: url(../assets/bg1.jpg);
     background-size: cover;
     background-position: center;
@@ -171,7 +171,7 @@ section.parallax {
 
 section.parallax > .center {
     max-width: 960px;
-    padding: 40px 2%;
+    padding: 40px 4%;
 }
 
 section.parallax p {
@@ -247,6 +247,7 @@ section.input-team .team .box {
     border: 1px solid #ccc;
     margin-top: 10px;
     padding: 10px 8px;
+    min-height: 400px;
 }
 
 section.input-team .team .topbox {
@@ -326,6 +327,7 @@ footer {
     section.input-team .box {
         width: 100%;
         margin: 0 auto;
+        min-height: 0 !important;
     }
 
     section.input-team .team h2 {
@@ -369,6 +371,14 @@ footer {
         font-size: 13px;
         width: 125px;
         line-height: 40px;
+    }
+
+    section.box-plans .box-wrapper h2 {
+        font-size: 20px;
+    }
+
+    section.box-plans .box-wrapper p {
+        font-size: 15px;
     }
 
     section.plans h2 {
