@@ -5,12 +5,12 @@ $(function() {
     function menuMobile() {
         $('body').on('click','.mobile', function(e) {
             e.stopPropagation();
-            $(this).find('ul').slideToggle();
+            $(this).find('ul').slideToggle(100);
         });
 
         $('body').on('click', function(e) {
             e.stopPropagation();
-            $('.mobile').find('ul').slideUp('open');
+            $('.mobile ul').slideUp(100);
         });
     }
 
